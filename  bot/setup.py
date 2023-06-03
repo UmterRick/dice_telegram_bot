@@ -1,9 +1,9 @@
 from aiogram import Bot, Dispatcher
 from aiogram.utils.executor import Executor
 import logging
-from config import TOKEN
+import os
 
-bot = Bot(token=TOKEN)
+bot = Bot(token=os.environ["TOKEN"])
 bot_dispatcher = Dispatcher(bot=bot)
 
 
