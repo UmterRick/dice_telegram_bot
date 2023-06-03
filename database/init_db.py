@@ -17,8 +17,8 @@ async def init_db():
     user_score INTEGER default 0,
     bot_score INTEGER default 0,
     game_type VARCHAR(50),
-    timestamp TIMESTAMP NOT NULL,
-    )
+    timestamp NUMERIC NOT NULL
+    );
     """
                          )
     await conn.close()
