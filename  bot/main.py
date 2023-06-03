@@ -1,8 +1,11 @@
 from aiogram import types
 from setup import bot_dispatcher, bot, logger, executor
 from keyboards import dice_game_keyboard
-
+from database.init_db import init_db
 games_results = {}
+
+async def init_bot():
+    await init_db()
 
 async def init_commands():
     command = types.BotCommand(command="play", description="start new game in dice")

@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "telegrambot"
+version = "0.1.0"
+description = ""
+authors = ["umterrick <usichenko.vlad67@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+aiopg = "^1.4.0"
+aiogram = "^2.25.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
